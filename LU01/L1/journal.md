@@ -1,6 +1,7 @@
 Introduction to AI
 
 August 25, 2025
+
 NOTES:
     No video was uploaded. But I assumme we went over the syllabus and expectations. I have read and
     went over the syllabus.
