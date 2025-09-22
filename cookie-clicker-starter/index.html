@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cookie Clicker</title>
+
+    <!-- Tailwind CSS via Play CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- External Styles & Script -->
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+
+  <body class="bg-yellow-100 text-brown-900 font-sans flex flex-col min-h-screen">
+
+    <!-- HEADER -->
+    <header class="bg-yellow-200 text-brown-800 shadow-md p-4 flex justify-center">
+      <h1 class="text-3xl font-bold flex items-center space-x-2">
+        <img src="Assets/PerfectCookie.webp" alt="Small Cookie" class="w-6 h-6" />
+        <span>Cookie Clicker</span>
+      </h1>
+    </header>
+
+    <!-- NAVIGATION BAR -->
+    <nav class="bg-yellow-300 text-brown-900 p-3 flex justify-center space-x-6 font-semibold">
+      <a href="#" class="hover:text-yellow-600">Home</a>
+      <a href="#" class="hover:text-yellow-600">Upgrades</a>
+      <a href="#" class="hover:text-yellow-600">Stats</a>
+      <a href="#" class="hover:text-yellow-600">About</a>
+    </nav>
+
+    <!-- MAIN CONTENT -->
+    <main class="flex-grow flex flex-col items-center justify-center text-center p-6">
+      <h2 class="text-3xl font-semibold mb-4">Click the Cookie!</h2>
+      <div id="cookie-container" class="my-4">
+        <img
+          src="Assets/PerfectCookie.webp"
+          alt="Perfect Cookie"
+          id="cookie-image"
+          class="rounded-full shadow-lg hover:scale-105 transition-transform duration-200 w-40 h-40 object-cover"
+        />
+      </div>
+      <p class="text-xl">
+        Clicks: <span id="click-count" class="font-bold">0</span></p>
+        <div class="mt-6 space-y-3">
+            <p class="text-xl">Cookies per second: <span id="cookies-per-second" class="font-bold">0</span></p>
+            
+            <button
+                id="buy-grandma"
+                class="bg-yellow-300 text-brown-900 px-4 py-2 rounded shadow hover:bg-yellow-400 font-semibold"
+            >
+                Buy Grandma (100 cookies)
+            </button>
+            <p class="text-sm text-brown-600">Grandmas owned: <span id="grandma-count">0</span></p>
+        </div>
+
+        <div class="mt-4 flex flex-col items-center">
+                <img
+                    src="Assets/Grandma.webp"
+                    alt="Grandma"
+                    class="w-24 h-24 object-cover rounded-full shadow-md"
+                />
+                <p class="text-sm mt-2 text-brown-700 italic">Your loyal grandma helper</p>
+        </div>
+            <!-- Toggle Button -->
+        <div class="text-center my-4">
+            <button id="toggle-achievements" class="bg-yellow-300 text-brown-900 px-4 py-2 rounded shadow hover:bg-yellow-400 font-semibold">
+                Show Achievements
+            </button>
+        </div>
+
+        <!-- Achievements Panel -->
+        <div id="achievements-panel" class="hidden max-w-md mx-auto p-4 bg-white text-brown-900 rounded shadow">
+            <h3 class="text-xl font-bold mb-2">Achievements</h3>
+            <ul id="achievements-list" class="space-y-2">
+                <!-- Achievements will be injected here -->
+            </ul>
+        </div>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="bg-yellow-200 text-brown-800 text-center p-4">
+      <p>
+        Source code on
+        <a href="https://github.com/your-repo" class="underline text-yellow-600 hover:text-yellow-800" target="_blank">GitHub</a>
+      </p>
+      <div class="mt-2 flex justify-center space-x-4">
+        <a href="https://twitter.com/yourprofile" class="hover:text-yellow-700" target="_blank">Twitter</a>
+        <a href="https://discord.com/yourserver" class="hover:text-yellow-700" target="_blank">Discord</a>
+      </div>
+    </footer>
+
+  </body>
+</html>
