@@ -2,8 +2,11 @@
 Hardware for AI 
 
 Raspberry Pi demo
+
 Understand what hardware is needed to run AI locally (CPU vs GPU, RAM/VRAM, storage).
+
 See how servers/headless systems are managed over the network.
+
 Practice the flow: image OS → boot Pi → SSH in → update/install packages → run a tiny web server.
 Need to Downloaded-VirtualBox 
 AR/Smart glasses news: AI integrated within your glasses.
