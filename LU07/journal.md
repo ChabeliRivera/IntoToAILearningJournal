@@ -36,17 +36,17 @@ IN-CLASS-DEMO:  SVELTE PROJECT
 
 Make sure you are in the correct folder before creating or running the project.
 
-npx sv create <project-name>
+npx sv create project-name
 
 npm install
 
 npm run dev
 
-•	Choose minimal, TypeScript, Tailwind, and NPM during setup.
+•Choose minimal, TypeScript, Tailwind, and NPM during setup.
 
 Inside lib/ → create a file called Header.svelte
 
-Move <h1> from main page into Header.svelte
+Move h1 from main page into Header.svelte
 
 Import it back into +page.svelte 
 
